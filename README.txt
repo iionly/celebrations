@@ -1,15 +1,15 @@
 Celebrations plugin for Elgg 1.9
-Latest Version: 1.9.2
-Released: 2013-09-28
+Latest Version: 1.9.3
+Released: 2014-04-18
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
-Copyright: (c) iionly 2012-2013, (C) Fernando Graells 2009-2013
+Copyright: (c) iionly 2012-2014, (C) Fernando Graells 2009-2014
 
 
 
-This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 1.8. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.7 and before should continue to be displayed and useable.
+This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 1.9. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.8 and before should continue to be displayed and useable.
 
-This version runs under Elgg v1.8 and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
+This version runs under Elgg v1.9 and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
 
 
 
@@ -40,6 +40,21 @@ If the Widget Manager plugin is enabled - and the Widget Manager plugin is confi
 
 
 Changelog:
+
+Changes for release 1.9.3 (by iionly)
+- Includes fixes of Celebrations version 1.9.3 with the necessary adaptions for Elgg 1.9,
+- Fix of a deprecation issue on Elgg 1.9 on using the 'login', 'user' event which has now be change to the 'login:after', 'user' evnt.
+
+Changes for release 1.8.3 (by iionly)
+
+- getting the Celebrations plugin to fully work again on Elgg 1.8.19 (thanks to Brett for helping me to solve this issue),
+- calculation and display of celebrations accounts for local (server) time instead of expecting GMT/UTC (celebration dates entered on profile pages are always saved in GMT/UTC but if the timezone of the server is different this should now taken into account correctly),
+- date selection (number of days in a month) fixed for Special anniversaries,
+- site menu "Celebrations" entry only included for logged-in users,
+- layout fixes for listings of celebrations in widgets and on the "Our anniversary celebrations in..." page,
+- success system message when plugin settings saved correctly,
+- Spanish language file added (thanks to Joaquín Marín),
+- code cleanup.
 
 Changes for release 1.9.2 (by iionly)
 
