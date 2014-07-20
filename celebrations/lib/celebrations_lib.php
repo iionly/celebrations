@@ -126,7 +126,7 @@ function user_celebrations($num, $checkdaystype, $filter, $month = null) {
 		$filter = 0;
 	}
 	if($filter < 0) {
-		$users = elgg_get_logged_in_user_entity()->getFriends('', false);
+		$users = elgg_get_logged_in_user_entity()->getFriends(array('limit' => false));
 	} elseif ($filter >= 1) {
 		$group = get_entity($filter);
 		if ($group instanceof ElggGroup) {

@@ -1,6 +1,6 @@
 Celebrations plugin for Elgg 1.9
-Latest Version: 1.9.3
-Released: 2014-04-18
+Latest Version: 1.9.3.1
+Released: 2014-07-20
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly 2012-2014, (C) Fernando Graells 2009-2014
@@ -40,6 +40,9 @@ If the Widget Manager plugin is enabled - and the Widget Manager plugin is confi
 
 
 Changelog:
+
+Changes for release 1.9.3.1 (by iionly)
+- Fix of deprecated usage of getFriends() function on Elgg 1.9.
 
 Changes for release 1.9.3 (by iionly)
 - Includes fixes of Celebrations version 1.9.3 with the necessary adaptions for Elgg 1.9,
