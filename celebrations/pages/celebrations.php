@@ -4,6 +4,8 @@ gatekeeper();
 
 elgg_set_context("celebrations");
 
+elgg_push_breadcrumb(elgg_echo('celebrations:shorttitle'), 'celebrations/celebrations/' . date("n") . '/0/');
+
 if (get_input('filterid')){
 	$filterid = get_input('filterid');
 } else {
@@ -16,17 +18,19 @@ if (get_input('month')){
 	forward(elgg_get_site_url() . "celebrations/celebrations/$month/$filterid");
 }
 
+elgg_push_breadcrumb(elgg_echo("celebrations:month:$month"));
+
 $user_guid = elgg_get_logged_in_user_guid();
 $onChange = "MM_jumpMenu('parent',this, $month)";
 $divbox = '<div class="elgg-module elgg-module-aside"><div class="elgg-head"><h3>'.elgg_echo('celebrations:filterby').'</h3></div>';
 
-$title = elgg_view_title(elgg_echo('celebrations:title').' '.elgg_echo('next_celebrations:in_title').' '.elgg_echo("celebrations:month:{$month}"));
+$title = elgg_echo('celebrations:title') .' '. elgg_echo('next_celebrations:in_title') .' '. elgg_echo("celebrations:month:{$month}");
 
 // Format page
-$area2 = $title . elgg_view('celebrations/list_celebrations', array('filterid' => $filterid, 'month' => $month));
+$area2 = elgg_view('celebrations/list_celebrations', array('filterid' => $filterid, 'month' => $month));
 $area3 = elgg_view('celebrations/sidebar', array('filterid' => $filterid, 'month' => $month));
 $area3 .= $divbox . elgg_view('input/dropdown', array('name' => 'input_filterid', 'options_values' => filterlist($user_guid), 'value' => $filterid, 'onChange' => $onChange)) . '</div>';
-$body = elgg_view('page/layouts/one_sidebar', array('content' => $area2, 'sidebar' => $area3));
+$body = elgg_view_layout('content', array('content' => $area2, 'filter' => '', 'title' => $title, 'sidebar' => $area3));
 
 // Draw it
 echo elgg_view_page(elgg_echo('celebrations:title'), $body);

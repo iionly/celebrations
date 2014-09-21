@@ -44,6 +44,8 @@ function celebrations_init() {
 	elgg_register_widget_type('index_today_celebrations', elgg_echo('today_celebrations:title'), elgg_echo('today_celebrations:description'), array("index"));
 	elgg_register_widget_type('index_next_celebrations', elgg_echo('next_celebrations:title'), elgg_echo('next_celebrations:description'), array("index"));
 
+	elgg_register_plugin_hook_handler("entity:url", "object", "celebrations_widget_urls");
+
 	elgg_register_action('celebrations/settings/save', elgg_get_plugins_path() . "celebrations/actions/celebrations/settings.php", 'admin');
 
 	if (elgg_is_active_plugin('profile_manager')) {
@@ -141,4 +143,21 @@ function celebrations_profile_fields_plugin_handler($hook, $type, $return_value,
 	elgg_set_config('profile_celebrations_prefix', 'celebrations_');
 
 	return $return_value;
+}
+
+function celebrations_widget_urls($hook_name, $entity_type, $return_value, $params) {
+	$result = $return_value;
+	$widget = $params["entity"];
+
+	if(empty($result) && ($widget instanceof ElggWidget)) {
+		switch($widget->handler) {
+			case "today_celebrations":
+			case "next_celebrations":
+			case "index_today_celebrations":
+			case "index_next_celebrations":
+				$result = 'celebrations/celebrations/' . date("n") . '/0/';
+				break;
+		}
+	}
+	return $result;
 }

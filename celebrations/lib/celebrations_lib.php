@@ -126,16 +126,30 @@ function user_celebrations($num, $checkdaystype, $filter, $month = null) {
 		$filter = 0;
 	}
 	if($filter < 0) {
-		$users = elgg_get_logged_in_user_entity()->getFriends(array('limit' => false));
+		$users = new ElggBatch('elgg_get_entities_from_relationship', array(
+			'type' => 'user',
+			'relationship' => 'friend',
+			'relationship_guid' => elgg_get_logged_in_user_guid(),
+			'limit' => false
+		));
 	} elseif ($filter >= 1) {
 		$group = get_entity($filter);
 		if ($group instanceof ElggGroup) {
 			if ($group->isMember(elgg_get_logged_in_user_entity())) {
-				$users = $group->getMembers(array('limit' => false));
+				$users = new ElggBatch('elgg_get_entities_from_relationship', array(
+					'type' => 'user',
+					'relationship' => 'member',
+					'relationship_guid' => $filter,
+					'inverse_relationship' => true,
+					'limit' => false
+				));
 			}
 		}
 	} else {
-		$users = elgg_get_entities(array('type' => 'user', 'limit' => false));
+		$users = new ElggBatch('elgg_get_entities', array(
+			'type' => 'user',
+			'limit' => false
+		));
 	}
 
 	//check the profile fields for the prefix of the celebrations plugin. This let us to grow up easily the number of fields

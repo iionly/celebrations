@@ -1,6 +1,6 @@
 Celebrations plugin for Elgg 1.9
-Latest Version: 1.9.3.1
-Released: 2014-07-20
+Latest Version: 1.9.4
+Released: 2014-09-21
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly 2012-2014, (C) Fernando Graells 2009-2014
@@ -41,10 +41,22 @@ If the Widget Manager plugin is enabled - and the Widget Manager plugin is confi
 
 Changelog:
 
+Changes for release 1.9.4 (by iionly)
+
+- Same as for version 1.8.4 for Elgg 1.9.
+
+Changes for release 1.8.4 (by iionly)
+
+- Layout adjustments (breadcrumps and title section) to better match the typical Elgg page layout,
+- Usage of ElggBatch'es in function user_celebrations() to avoid memory issues on larger sites (long-time goal is complete rewrite of this function).
+- Widget urls (in title) added forwarding to celebrations page (requires Widget Manager plugin).
+
 Changes for release 1.9.3.1 (by iionly)
+
 - Fix of deprecated usage of getFriends() function on Elgg 1.9.
 
 Changes for release 1.9.3 (by iionly)
+
 - Includes fixes of Celebrations version 1.9.3 with the necessary adaptions for Elgg 1.9,
 - Fix of a deprecation issue on Elgg 1.9 on using the 'login', 'user' event which has now be change to the 'login:after', 'user' evnt.
 
