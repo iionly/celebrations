@@ -57,8 +57,8 @@ function celebrations_init() {
 			"admin_only" => "no",
 			"count_for_completeness" => "yes"
 		);
-		add_custom_field_type("custom_profile_field_types", "day_anniversary", "day_anniversary", $profile_options);
-		add_custom_field_type("custom_profile_field_types", "yearly", "day_anniversary", $profile_options);
+		profile_manager_add_custom_field_type("custom_profile_field_types", "day_anniversary", "day_anniversary", $profile_options);
+		profile_manager_add_custom_field_type("custom_profile_field_types", "yearly", "day_anniversary", $profile_options);
 	}
 }
 

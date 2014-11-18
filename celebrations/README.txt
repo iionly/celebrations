@@ -1,6 +1,6 @@
 Celebrations plugin for Elgg 1.9
-Latest Version: 1.9.4
-Released: 2014-09-21
+Latest Version: 1.9.4.1
+Released: 2014-11-18
 Contact: iionly@gmx.de
 License: GNU General Public License version 2
 Copyright: (c) iionly 2012-2014, (C) Fernando Graells 2009-2014
@@ -40,6 +40,10 @@ If the Widget Manager plugin is enabled - and the Widget Manager plugin is confi
 
 
 Changelog:
+
+Changes for release 1.9.4.1 (by iionly)
+
+- Restored compatibility with Profile Manager plugin (minimum version required: 8.0) on Elgg 1.9.
 
 Changes for release 1.9.4 (by iionly)
 
