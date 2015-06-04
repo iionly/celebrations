@@ -18,9 +18,10 @@
 </p>
 <p>
 <?php echo elgg_echo('celebrations:filterby').": ";
-echo elgg_view('input/dropdown',array('name' => 'params[index_nextfilterid]',
-										'options_values'=>array('0' => elgg_echo('celebrations:option_all'), '-1' => elgg_echo('celebrations:option_friends')),
-										'value'=>$vars['entity']->index_nextfilterid
+echo elgg_view('input/select',array(
+	'name' => 'params[index_nextfilterid]',
+	'options_values'=>array('0' => elgg_echo('celebrations:option_all'), '-1' => elgg_echo('celebrations:option_friends')),
+	'value'=>$vars['entity']->index_nextfilterid
 ));
 ?>
 </p>

@@ -6,11 +6,11 @@
  *
  * @package profile_manager
  * @author ColdTrick IT Solutions
- * @copyright Coldtrick IT Solutions 2009-2014
+ * @copyright Coldtrick IT Solutions 2009
  * @link http://www.coldtrick.com/
  *
- * adapted and modified for the celebrations plugin for Elgg 1.8+1.9 by iionly
- * (c) iionly 2012-2014
+ * adapted and modified for the celebrations plugin for Elgg 1.8 and newer by iionly
+ * (c) iionly 2012
  *
  */
 
