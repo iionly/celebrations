@@ -1,6 +1,13 @@
-== Changelog ==
+Changelog
+=========
 
-=== 1.9.5 (by iionly) ===
+1.9.6 (by iionly)
+-----------------
+
+- composer.json added.
+
+1.9.5 (by iionly)
+-----------------
 
 - Registering of site menu entry with a constant string identifier (no longer falsely use elgg_echo here...)
 - Registering of sidebar entries embedded within <ul> to avoid ugly dots getting displayed (seemed to happen on Chrome at least)
@@ -8,30 +15,36 @@
 - updated usage of input/dropdown to input/select
 
 
-=== 1.9.4.1 (by iionly) ===
+1.9.4.1 (by iionly)
+-------------------
 
 - Restored compatibility with Profile Manager plugin (minimum version required: 8.0) on Elgg 1.9
 
-=== 1.9.4 (by iionly) ===
+1.9.4 (by iionly)
+-----------------
 
 - Same as for version 1.8.4 for Elgg 1.9
 
-=== 1.8.4 (by iionly) ===
+1.8.4 (by iionly)
+-----------------
 
 - Layout adjustments (breadcrumps and title section) to better match the typical Elgg page layout
 - Usage of ElggBatch'es in function user_celebrations() to avoid memory issues on larger sites (long-time goal is complete rewrite of this function)
 - Widget urls (in title) added forwarding to celebrations page (requires Widget Manager plugin)
 
-=== 1.9.3.1 (by iionly) ===
+1.9.3.1 (by iionly)
+-----------------
 
 - Fix of deprecated usage of getFriends() function on Elgg 1.9
 
-=== 1.9.3 (by iionly) ===
+1.9.3 (by iionly)
+-----------------
 
 - Includes fixes of Celebrations version 1.9.3 with the necessary adaptions for Elgg 1.9
 - Fix of a deprecation issue on Elgg 1.9 on using the 'login', 'user' event which has now be change to the 'login:after', 'user' event
 
-=== 1.8.3 (by iionly) ===
+1.8.3 (by iionly)
+-----------------
 
 - getting the Celebrations plugin to fully work again on Elgg 1.8.19 (thanks to Brett for helping me to solve this issue)
 - calculation and display of celebrations accounts for local (server) time instead of expecting GMT/UTC (celebration dates entered on profile pages are always saved in GMT/UTC but if the timezone of the server is different this should now taken into account correctly)
@@ -42,22 +55,26 @@
 - Spanish language file added (thanks to Joaquín Marín)
 - code cleanup
 
-=== 1.9.2 (by iionly) ===
+1.9.2 (by iionly)
+-----------------
 
 - Updated for Elgg 1.9
 
-=== 1.8.2 (by iionly) ===
+1.8.2 (by iionly)
+-----------------
 
 - code cleanup
 - fixed: showing date in format selected in Celebrations plugin settings on Celebrations listing page, in profile pages info section and widgets
 - fixed: allow for translations of month names via language file and also use these translations then
 - fixed: user filter (all, friends, members of specific group) to work as intended on Celebrations listing page
 
-=== 1.8.1 (by iionly) ===
+1.8.1 (by iionly)
+-----------------
 
 - check if arrays of foreach loops are populated prior loop execution to prevent php warnings added to error log
 
-=== 1.8.0 (by iionly) ===
+1.8.0 (by iionly)
+-----------------
 
 - updated for Elgg 1.8
 - code cleanup
@@ -66,23 +83,27 @@
 - made it to work with Profile Manager plugin installed
 - index page widgets to be available when Widget Manager plugin is installed
 
-=== 1.3 ===
+1.3
+---
 
 - Change strftime for gmstrftime to solve problems with dates between differents gmt places (test by chombian, thanks)
 - corrected bug with image path in css to display the sendtomessage image in "today celebrations" widget
 - corrected a bug with friends filter
 
-=== 1.2 ===
+1.2
+---
 
 - Add selects in settings because we had problems with checkboxes in plugins settings
 
-=== 1.1 ===
+1.1
+---
 
 - Correct some date type to strftime
 - Added "friends filter"
 - Now you can select fields to add from the plugin default
 
-=== 1.0 ===
+1.0
+---
 
 - Full code rewrite to improve the files and let it to grow up
 - Now is very easy (with a few code) to add new fields types (as periodical events) and profile fields
@@ -90,18 +111,21 @@
 - Independent from other profile plugins (in this version you don't need the flexprofile plugin)
 - Added a field for the wedding date
 
-=== 0.4 ===
+0.4
+---
 
 - problem in date dropdown with firefox fixed
 - Added two languages files (spanish and catalan)
 
-=== 0.3 ===
+0.3
+---
 
 - Added a new widget to see the next celebrations (you can edit the widget setting in the edit button on the widget)
 - Added a reminder when you login with the next celebrations (you can edit the settings in the admin plugin settings)
 - Added the possibility to send a message in the today celebrations widget
 
-=== 0.2 ===
+0.2
+---
 
 - Change date by gmdate
 - Correct some errors with feast celebrations

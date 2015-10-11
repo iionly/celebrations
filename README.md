@@ -1,27 +1,28 @@
-Celebrations plugin for Elgg 1.9 - 1.11
+Celebrations plugin for Elgg 1.9 - 1.12
 =======================================
 
-Latest Version: 1.9.5  
-Released: 2015-06-04  
+Latest Version: 1.9.6  
+Released: 2015-10-11  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
-Copyright: (c) iionly 2012-2015, (C) Fernando Graells 2009-2015  
+Copyright: (c) iionly 2012-2015, (C) Fernando Graells 2009-2015
 
 
 Description
 -----------
 
-This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 1.9. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.8 and before should continue to be displayed and useable.
+This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 1.9 and newer. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.8 and before should continue to be displayed and useable.
 
-This version runs under Elgg v1.9 and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
+This version runs under Elgg 1.9 - 1.12 and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
 
 
 Installation and configuration
 ------------------------------
 
-1. copy the Celebrations plugin folder into the mod folder on your server,
-2. enable the plugin in the admin section of your site,
-3. configure the plugin settings (especially which profile fields to be used) on the Celebrations plugin settings page.
+1. If you have a previous version of the Celebrations plugin installed, disable it and then remove the celebrations folder from your mod directory before copying the new version on the server,
+2. Copy the Celebrations plugin folder into the mod folder on your server,
+3. Enable the plugin in the admin section of your site,
+4. Configure the plugin settings (especially which profile fields to be used) on the Celebrations plugin settings page.
 
 Now, users can enter their profile information for the active profile fields and they also can add the Celebrations plugin's widget to their profile page and/or dashboards. All celebrations of users are additionally listed on the Celebrations plugins page sorted by month.
 

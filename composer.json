@@ -1,0 +1,24 @@
+{
+    "name": "iionly/celebrations",
+    "description": "Let users enter and view celebrations like birthdays and wedding days.",
+    "type": "elgg-plugin",
+    "keywords": [
+        "elgg",
+        "plugin"
+    ],
+    "homepage": "https://github.com/iionly/celebrations",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "iionly",
+            "homepage": "https://github.com/iionly",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+            "issues": "https://github.com/iionly/celebrations/issues"
+    },
+    "require": {
+        "composer/installers": ">=1.0.8"
+    }
+}
