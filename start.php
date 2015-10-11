@@ -67,15 +67,12 @@ function celebrations_page_handler($page) {
 		return false;
 	}
 
+	$resource_vars = array();
 	switch ($page[0]) {
 		case "celebrations":
-			if (isset($page[1])) {
-				set_input('month', $page[1]);
-			}
-			if (isset($page[2])) {
-				set_input('filterid', $page[2]);
-			}
-			require elgg_get_plugins_path() . "celebrations/pages/celebrations.php";
+			$resource_vars['month'] = elgg_extract(1, $page, date("n"));
+			$resource_vars['filterid'] = elgg_extract(2, $page, 0);
+			echo elgg_view_resource('celebrations/celebrations', $resource_vars);
 			break;
 		default:
 			return false;

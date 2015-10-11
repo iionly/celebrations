@@ -8,17 +8,9 @@ elgg_set_context("celebrations");
 
 elgg_push_breadcrumb(elgg_echo('celebrations:shorttitle'), 'celebrations/celebrations/' . date("n") . '/0/');
 
-if (get_input('filterid')){
-	$filterid = get_input('filterid');
-} else {
-	$filterid = 0;
-}
-if (get_input('month')){
-	$month = get_input('month');
-} else {
-	$month = date("n");
-	forward(elgg_get_site_url() . "celebrations/celebrations/$month/$filterid");
-}
+$filterid = elgg_extract('filterid', $vars, 0);
+
+$month = elgg_extract('month', $vars, date("n"));
 
 elgg_push_breadcrumb(elgg_echo("celebrations:month:$month"));
 

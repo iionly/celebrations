@@ -1,7 +1,7 @@
-Celebrations plugin for Elgg 1.9 - 1.12
-=======================================
+Celebrations plugin for Elgg 2.X
+================================
 
-Latest Version: 1.9.6  
+Latest Version: 2.0.0  
 Released: 2015-10-11  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
@@ -11,9 +11,9 @@ Copyright: (c) iionly 2012-2015, (C) Fernando Graells 2009-2015
 Description
 -----------
 
-This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 1.9 and newer. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.8 and before should continue to be displayed and useable.
+This plugin lets users enter and view celebrations like birthdays and wedding days. It's an updated and enhanced version of the Celebrations plugin originally published by Fernando Graells that works in Elgg 2.0 and newer 2.X. Any profile information entered by users with earlier versions of the Celebrations plugin in Elgg 1.8 and before should continue to be displayed and useable.
 
-This version runs under Elgg 1.9 - 1.12 and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
+This version runs under Elgg 2.X and doesn't need another plugins to work but if you have the Profile Manager plugin and/or the Widget Manager plugin installed you will gain additional functionality. The Celebrations plugin uses the core profile fields (not the core custom profile fields) and adds the necessary fields when saving the plugin settings automatically.
 
 
 Installation and configuration
