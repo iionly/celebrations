@@ -25,12 +25,12 @@ function convert_date($fecha, $feast) {
 
 // date order
 function printcelebrationsdate($type, $date) {
-
+        
 	$date_type = elgg_get_plugin_setting("date_type", "celebrations");
 	if(!$date_type) {
 		$date_type = 1;
 	}
-	if (!type) {
+	if (!$type) {
 		$type = 1; // by default short date
 	}
 	if (!isset($date)) {

@@ -37,7 +37,7 @@ if (!$show_today) {
 //draw celebrations
 if (!empty($row_celebrations)) {
 	print '<table width="100%">';
-
+        $even_odd = 'FFFFFF';
 	foreach($row_celebrations as $key => $val) {
 		if (($show_today == 1) || ($val['rest'] >= 1)) {
 			$even_odd = ( 'F3F3F3' != $even_odd ) ? 'F3F3F3' : 'FFFFFF';

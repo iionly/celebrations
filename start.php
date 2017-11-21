@@ -118,22 +118,22 @@ function show_next_celebrations() {
 function celebrations_profile_fields_plugin_handler($hook, $type, $return_value, $params) {
 
 	// add celebrations fields to the core profile
-	if((elgg_get_plugin_setting("lastname_field","celebrations") == 'yes') && (!$return_value['lastname'])) {
+	if((elgg_get_plugin_setting("lastname_field","celebrations") == 'yes') && (!array_key_exists('lastname', $return_value))) {
 		$return_value['lastname'] = 'text';
 	}
-	if((elgg_get_plugin_setting("secondlastname_field","celebrations") == 'yes') && (!$return_value['secondlastname'])) {
+	if((elgg_get_plugin_setting("secondlastname_field","celebrations") == 'yes') && (!array_key_exists('secondlastname',$return_value ))) {
 		$return_value['secondlastname'] = 'text';
 	}
-	if ((elgg_get_plugin_setting("celebrations_birthdate_field","celebrations") == 'yes') && (!$return_value['celebrations_birthdate'])) {
+	if ((elgg_get_plugin_setting("celebrations_birthdate_field","celebrations") == 'yes') && (!array_key_exists('celebrations_birthdate', $return_value))) {
 		$return_value['celebrations_birthdate'] = 'day_anniversary';
 	}
-	if ((elgg_get_plugin_setting("celebrations_dieday_field","celebrations") == 'yes') && (!$return_value['celebrations_dieday'])) {
+	if ((elgg_get_plugin_setting("celebrations_dieday_field","celebrations") == 'yes') && (!array_key_exists('celebrations_dieday', $return_value))) {
 		$return_value['celebrations_dieday'] = 'day_anniversary';
 	}
-	if ((elgg_get_plugin_setting("celebrations_feastdate_field","celebrations") == 'yes') && (!$return_value['celebrations_feastdate'])) {
+	if ((elgg_get_plugin_setting("celebrations_feastdate_field","celebrations") == 'yes') && (!array_key_exists('celebrations_feastdate', $return_value))) {
 		$return_value['celebrations_feastdate'] = 'yearly';
 	}
-	if ((elgg_get_plugin_setting("celebrations_weddingdate_field","celebrations") == 'yes') && (!$return_value['celebrations_weddingdate'])) {
+	if ((elgg_get_plugin_setting("celebrations_weddingdate_field","celebrations") == 'yes') && (!array_key_exists('celebrations_weddingdate', $return_value))) {
 		$return_value['celebrations_weddingdate'] = 'day_anniversary';
 	}
 
