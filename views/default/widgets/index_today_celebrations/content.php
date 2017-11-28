@@ -19,7 +19,7 @@ $row_celebrations = user_celebrations(0,'next', $filterid);
 // list of celebrations
 if (!empty($row_celebrations)) {
 	print '<table width="100%">';
-
+	$even_odd = 'FFFFFF';
 	foreach($row_celebrations as $key => $val) {
 		$sendcelebrationsmessage = '';
 		if (($val['type'] != 'dieday') && ($val['id'] != elgg_get_logged_in_user_guid())) {
