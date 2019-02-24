@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.0.1 (by iionly)
+-----------------
+
+- French translations added thanks to BenaeSan,
+- Fixed some undeclared variable usages thanks to BenaeSan.
+
 2.0.0 (by iionly)
 -----------------
 

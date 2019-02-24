@@ -1,11 +1,11 @@
 Celebrations plugin for Elgg 2.X
 ================================
 
-Latest Version: 2.0.0  
-Released: 2015-10-11  
+Latest Version: 2.0.1  
+Released: 2019-02-24  
 Contact: iionly@gmx.de  
 License: GNU General Public License version 2  
-Copyright: (c) iionly 2012-2015, (C) Fernando Graells 2009-2015
+Copyright: (c) iionly 2012, (C) Fernando Graells 2009
 
 
 Description
